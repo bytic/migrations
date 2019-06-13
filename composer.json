@@ -1,6 +1,6 @@
 {
   "name": "bytic/migrations",
-  "license": "",
+  "license": "MIT",
   "description": "Bytic migrations",
   "authors": [
     {
