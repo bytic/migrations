@@ -1,0 +1,17 @@
+{
+  "name": "bytic/migrations",
+  "license": "",
+  "description": "Bytic migrations",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+  },
+  "require": {
+    "robmorgan/phinx": "^0.10",
+    "odan/phinx-migrations-generator": "^4.0"
+  }
+}
