@@ -11,7 +11,7 @@
   "autoload": {
   },
   "require": {
-    "robmorgan/phinx": "^0.10",
-    "odan/phinx-migrations-generator": "^4.0"
+    "robmorgan/phinx": "^0.12",
+    "odan/phinx-migrations-generator": "^5.0"
   }
 }
