@@ -12,7 +12,7 @@ class CommandTest extends AbstractTest
 {
     public function test_runPhinx()
     {
-        $process = new Process([PROJECT_BASE_PATH.'/vendor/bin/phinx', 'migrate']);
+        $process = new Process([PROJECT_BASE_PATH . '/vendor/bin/phinx', 'migrate']);
         $process->setWorkingDirectory(TEST_FIXTURE_PATH);
         $process->run();
 

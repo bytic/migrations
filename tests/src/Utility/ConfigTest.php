@@ -20,13 +20,13 @@ class ConfigTest extends AbstractTest
     public function test_addBasePath()
     {
         $config = new Config();
-        $basePath = TEST_FIXTURE_PATH.DIRECTORY_SEPARATOR.'directions';
+        $basePath = TEST_FIXTURE_PATH . DIRECTORY_SEPARATOR . 'directions';
         $config->addBasePath($basePath);
         self::assertSame(
             [
                 'paths' => [
-                    'migrations' => $basePath.DIRECTORY_SEPARATOR.'migrations',
-                    'seeds'      => $basePath.DIRECTORY_SEPARATOR.'seeds',
+                    'migrations' => $basePath . DIRECTORY_SEPARATOR . 'migrations',
+                    'seeds'      => $basePath . DIRECTORY_SEPARATOR . 'seeds',
                 ],
                 'environments' => [],
             ],
