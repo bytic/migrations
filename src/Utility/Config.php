@@ -3,8 +3,7 @@
 namespace Bytic\Migrations\Utility;
 
 /**
- * Class Config
- * @package Bytic\Migrations\Utility
+ * Class Config.
  */
 class Config
 {
@@ -18,7 +17,7 @@ class Config
         $this->params = [
             'paths' => [
                 'migrations' => '',
-                'seeds' => '',
+                'seeds'      => '',
             ],
             'environments' => [],
         ];
@@ -47,8 +46,8 @@ class Config
      */
     public function addBasePath($path)
     {
-        $this->setPath('migrations', $path . DIRECTORY_SEPARATOR . 'migrations');
-        $this->setPath('seeds', $path . DIRECTORY_SEPARATOR . 'seeds');
+        $this->setPath('migrations', $path.DIRECTORY_SEPARATOR.'migrations');
+        $this->setPath('seeds', $path.DIRECTORY_SEPARATOR.'seeds');
     }
 
     /**
@@ -68,10 +67,10 @@ class Config
     {
         $env = [
             'adapter' => 'DB_ADAPTER',
-            'host' => 'DB_HOST',
-            'name' => 'DB_DATABASE',
-            'user' => 'DB_USERNAME',
-            'pass' => 'DB_PASSWORD',
+            'host'    => 'DB_HOST',
+            'name'    => 'DB_DATABASE',
+            'user'    => 'DB_USERNAME',
+            'pass'    => 'DB_PASSWORD',
         ];
         foreach ($env as $param => $envName) {
             if (!empty($config[$param])) {
@@ -89,13 +88,13 @@ class Config
     public function addEnviroment($name, $config)
     {
         $default = [
-            'adapter' => 'mysql',
-            'host' => 'localhost',
-            'name' => '',
-            'user' => '',
-            'pass' => '',
-            'port' => '3306',
-            'charset' => 'utf8',
+            'adapter'   => 'mysql',
+            'host'      => 'localhost',
+            'name'      => '',
+            'user'      => '',
+            'pass'      => '',
+            'port'      => '3306',
+            'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
         ];
         foreach ($default as $param => $value) {

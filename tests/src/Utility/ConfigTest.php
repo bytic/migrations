@@ -6,8 +6,7 @@ use Bytic\Migrations\Tests\AbstractTest;
 use Bytic\Migrations\Utility\Config;
 
 /**
- * Class ConfigTest
- * @package Bytic\Migrations\Tests\Utility
+ * Class ConfigTest.
  */
 class ConfigTest extends AbstractTest
 {
@@ -21,15 +20,15 @@ class ConfigTest extends AbstractTest
     public function test_addBasePath()
     {
         $config = new Config();
-        $basePath = TEST_FIXTURE_PATH . DIRECTORY_SEPARATOR . 'directions';
+        $basePath = TEST_FIXTURE_PATH.DIRECTORY_SEPARATOR.'directions';
         $config->addBasePath($basePath);
         self::assertSame(
             [
                 'paths' => [
-                    'migrations' => $basePath . DIRECTORY_SEPARATOR . 'migrations',
-                    'seeds' => $basePath . DIRECTORY_SEPARATOR . 'seeds',
+                    'migrations' => $basePath.DIRECTORY_SEPARATOR.'migrations',
+                    'seeds'      => $basePath.DIRECTORY_SEPARATOR.'seeds',
                 ],
-                'environments' => []
+                'environments' => [],
             ],
             $config->toArray()
         );
@@ -49,14 +48,14 @@ class ConfigTest extends AbstractTest
 
         self::assertSame(
             [
-                'host' => 'localhost',
-                'name' => 'mydb',
-                'user' => 'root',
-                'pass' => 'pass',
-                'adapter' => 'mysql',
-                'port' => '3306',
-                'charset' => 'utf8',
-                'collation' => 'utf8_unicode_ci'
+                'host'      => 'localhost',
+                'name'      => 'mydb',
+                'user'      => 'root',
+                'pass'      => 'pass',
+                'adapter'   => 'mysql',
+                'port'      => '3306',
+                'charset'   => 'utf8',
+                'collation' => 'utf8_unicode_ci',
             ],
             $params['environments']['local']
         );
