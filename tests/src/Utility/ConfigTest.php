@@ -13,7 +13,7 @@ class ConfigTest extends AbstractTest
     public function test_noConfig()
     {
         $config = new Config();
-        self::assertTrue(is_array($config));
+
         self::assertSame(['paths' => ['migrations' => '', 'seeds' => ''], 'environments' => []], $config->toArray());
     }
 

@@ -76,6 +76,9 @@ class Config
             if (!empty($config[$param])) {
                 continue;
             }
+            if (empty($_ENV[$envName])) {
+                continue;
+            }
             $config[$param] = $_ENV[$envName];
         }
         $this->addEnviroment($name, $config);
