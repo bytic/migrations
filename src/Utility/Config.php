@@ -46,8 +46,8 @@ class Config
      */
     public function addBasePath($path)
     {
-        $this->setPath('migrations', $path.DIRECTORY_SEPARATOR.'migrations');
-        $this->setPath('seeds', $path.DIRECTORY_SEPARATOR.'seeds');
+        $this->setPath('migrations', $path . DIRECTORY_SEPARATOR . 'migrations');
+        $this->setPath('seeds', $path . DIRECTORY_SEPARATOR . 'seeds');
     }
 
     /**
