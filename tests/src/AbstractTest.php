@@ -6,8 +6,7 @@ use Mockery as m;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class AbstractTest
- * @package Bytic\Migrations\Tests
+ * Class AbstractTest.
  */
 abstract class AbstractTest extends TestCase
 {

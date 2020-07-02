@@ -6,14 +6,13 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 /**
- * Class CommandTest
- * @package Bytic\Migrations\Tests
+ * Class CommandTest.
  */
 class CommandTest extends AbstractTest
 {
     public function test_runPhinx()
     {
-        $process = new Process([PROJECT_BASE_PATH . '/vendor/bin/phinx', 'migrate']);
+        $process = new Process([PROJECT_BASE_PATH.'/vendor/bin/phinx', 'migrate']);
         $process->setWorkingDirectory(TEST_FIXTURE_PATH);
         $process->run();
 
