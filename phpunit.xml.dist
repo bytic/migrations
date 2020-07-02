@@ -27,7 +27,7 @@
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
             <exclude>
-                <directory>./src/templates</directory>
+                <file>./src/phinx.php</file>
             </exclude>
         </whitelist>
     </filter>
