@@ -2,6 +2,7 @@
 
 namespace Bytic\Migrations\Tests;
 
+use Bytic\Migrations\Utility\Helper;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 
@@ -10,16 +11,16 @@ use PHPUnit\Framework\TestCase;
  */
 abstract class AbstractTest extends TestCase
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        \Nip\Container\Container::setInstance(new \Nip\Container\Container());
-    }
-
     public function tearDown(): void
     {
         parent::tearDown();
+
+        $path = Helper::normalizePath(Helper::getBasePath(), 'bootstrap', 'cache', 'migrations.php');
+        if (file_exists($path)) {
+            unlink($path);
+        }
+        Helper::setBasePath(null);
+
         $this->addToAssertionCount(
             \Mockery::getContainer()->mockery_getExpectationCount()
         );

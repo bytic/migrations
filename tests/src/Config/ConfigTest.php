@@ -1,9 +1,9 @@
 <?php
 
-namespace Bytic\Migrations\Tests\Utility;
+namespace Bytic\Migrations\Tests\Config;
 
 use Bytic\Migrations\Tests\AbstractTest;
-use Bytic\Migrations\Utility\Config;
+use Bytic\Migrations\Config\Config;
 
 /**
  * Class ConfigTest.
@@ -14,7 +14,7 @@ class ConfigTest extends AbstractTest
     {
         $config = new Config();
 
-        self::assertSame(['paths' => ['migrations' => '', 'seeds' => ''], 'environments' => []], $config->toArray());
+        self::assertSame(['paths' => ['migrations' => [], 'seeds' => []], 'environments' => []], $config->toArray());
     }
 
     public function test_addBasePath()
@@ -25,8 +25,8 @@ class ConfigTest extends AbstractTest
         self::assertSame(
             [
                 'paths' => [
-                    'migrations' => $basePath . DIRECTORY_SEPARATOR . 'migrations',
-                    'seeds'      => $basePath . DIRECTORY_SEPARATOR . 'seeds',
+                    'migrations' => [$basePath . DIRECTORY_SEPARATOR . 'migrations'],
+                    'seeds'      => [$basePath . DIRECTORY_SEPARATOR . 'seeds'],
                 ],
                 'environments' => [],
             ],

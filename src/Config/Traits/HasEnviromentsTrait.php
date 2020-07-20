@@ -1,63 +1,13 @@
 <?php
 
-namespace Bytic\Migrations\Utility;
+namespace Bytic\Migrations\Config\Traits;
 
 /**
- * Class Config.
+ * Trait HasEnviromentsTrait
+ * @package Bytic\Migrations\Config\Traits
  */
-class Config
+trait HasEnviromentsTrait
 {
-    protected $params;
-
-    /**
-     * Config constructor.
-     */
-    public function __construct()
-    {
-        $this->params = [
-            'paths' => [
-                'migrations' => '',
-                'seeds'      => '',
-            ],
-            'environments' => [],
-        ];
-    }
-
-    /**
-     * @return static
-     */
-    public static function fromConfig()
-    {
-        $config = new static();
-
-        return $config;
-    }
-
-    /**
-     * @return array
-     */
-    public function toArray()
-    {
-        return $this->params;
-    }
-
-    /**
-     * @param $path
-     */
-    public function addBasePath($path)
-    {
-        $this->setPath('migrations', $path . DIRECTORY_SEPARATOR . 'migrations');
-        $this->setPath('seeds', $path . DIRECTORY_SEPARATOR . 'seeds');
-    }
-
-    /**
-     * @param $type
-     * @param $path
-     */
-    public function setPath($type, $path)
-    {
-        $this->params['paths'][$type] = $path;
-    }
 
     /**
      * @param $name
