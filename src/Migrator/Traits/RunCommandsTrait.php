@@ -15,7 +15,7 @@ trait RunCommandsTrait
      * @param $output
      * @return int
      */
-    protected function migrate($output = null)
+    public function migrate($output = null)
     {
         return $this->runCommand('migrate', [], $output);
     }

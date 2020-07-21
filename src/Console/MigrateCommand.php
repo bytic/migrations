@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class PublishCommand
+ * Class MigrateCommand
  * @package ByTIC\Migrations\Console
  */
 class MigrateCommand extends Command
@@ -26,7 +26,7 @@ class MigrateCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $scheduler = migrator();
-        return $scheduler->migrate($output);
+        $migrator = migrator();
+        return $migrator->migrate($output);
     }
 }

@@ -11,16 +11,16 @@
   "autoload": {
     "psr-4": {
       "ByTIC\\Migrations\\": "src"
-    }
+    },
+    "files": [
+      "src/Utility/general.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
       "ByTIC\\Migrations\\Tests\\": "tests/src",
       "ByTIC\\Migrations\\Tests\\Fixtures\\": "tests/fixtures"
-    },
-    "files": [
-      "src/Utility/general.php"
-    ]
+    }
   },
   "require": {
     "bytic/dotenv": "^4.0",
