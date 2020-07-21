@@ -1,10 +1,10 @@
 <?php
 
-namespace Bytic\Migrations\Migrator\Traits;
+namespace ByTIC\Migrations\Migrator\Traits;
 
 /**
  * Trait HasEnviromentsTrait
- * @package Bytic\Migrations\Migrator\Traits
+ * @package ByTIC\Migrations\Migrator\Traits
  */
 trait HasEnviromentsTrait
 {

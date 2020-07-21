@@ -1,10 +1,10 @@
 <?php
 
-namespace Bytic\Migrations;
+namespace ByTIC\Migrations;
 
 /**
  * Class Migrator
- * @package Bytic\Migrations
+ * @package ByTIC\Migrations
  */
 class Migrator
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Bytic\Migrations\Config\Traits;
+namespace ByTIC\Migrations\Config\Traits;
 
 /**
  * Trait HasPathsTrait
- * @package Bytic\Migrations\Config\Traits
+ * @package ByTIC\Migrations\Config\Traits
  */
 trait HasPathsTrait
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Bytic\Migrations\Migrator\Traits;
+namespace ByTIC\Migrations\Migrator\Traits;
 
-use Bytic\Migrations\Config\Config;
-use Bytic\Migrations\Utility\Helper;
+use ByTIC\Migrations\Config\Config;
+use ByTIC\Migrations\Utility\Helper;
 
 /**
  * Trait HasConfigTrait
- * @package Bytic\Migrations\Migrator\Traits
+ * @package ByTIC\Migrations\Migrator\Traits
  */
 trait HasConfigTrait
 {

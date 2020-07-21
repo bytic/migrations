@@ -1,12 +1,12 @@
 <?php
 
-namespace Bytic\Migrations\Migrator\Traits;
+namespace ByTIC\Migrations\Migrator\Traits;
 
-use Bytic\Migrations\Utility\Helper;
+use ByTIC\Migrations\Utility\Helper;
 
 /**
  * Trait HasPathsTrait
- * @package Bytic\Migrations\Migrator\Traits
+ * @package ByTIC\Migrations\Migrator\Traits
  */
 trait HasPathsTrait
 {

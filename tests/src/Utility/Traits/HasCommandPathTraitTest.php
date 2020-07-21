@@ -1,13 +1,13 @@
 <?php
 
-namespace Bytic\Migrations\Tests\Utility\Traits;
+namespace ByTIC\Migrations\Tests\Utility\Traits;
 
-use Bytic\Migrations\Tests\AbstractTest;
-use Bytic\Migrations\Utility\Helper;
+use ByTIC\Migrations\Tests\AbstractTest;
+use ByTIC\Migrations\Utility\Helper;
 
 /**
  * Class HasCommandPathTraitTest
- * @package Bytic\Migrations\Tests\Utility\Traits
+ * @package ByTIC\Migrations\Tests\Utility\Traits
  */
 class HasCommandPathTraitTest extends AbstractTest
 {

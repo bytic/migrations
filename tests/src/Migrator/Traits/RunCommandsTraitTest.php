@@ -1,15 +1,15 @@
 <?php
 
-namespace Bytic\Migrations\Tests\Migrator\Traits;
+namespace ByTIC\Migrations\Tests\Migrator\Traits;
 
-use Bytic\Migrations\Migrator;
-use Bytic\Migrations\Tests\AbstractTest;
-use Bytic\Migrations\Utility\Helper;
+use ByTIC\Migrations\Migrator;
+use ByTIC\Migrations\Tests\AbstractTest;
+use ByTIC\Migrations\Utility\Helper;
 use Mockery\Mock;
 
 /**
  * Class RunCommandsTraitTest
- * @package Bytic\Migrations\Tests\Migrator\Traits
+ * @package ByTIC\Migrations\Tests\Migrator\Traits
  */
 class RunCommandsTraitTest extends AbstractTest
 {

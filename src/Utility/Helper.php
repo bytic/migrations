@@ -1,10 +1,10 @@
 <?php
 
-namespace Bytic\Migrations\Utility;
+namespace ByTIC\Migrations\Utility;
 
 /**
  * Class Helper
- * @package Bytic\Migrations\Utility
+ * @package ByTIC\Migrations\Utility
  */
 class Helper
 {

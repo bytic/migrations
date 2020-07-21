@@ -4,7 +4,7 @@ use Nip\Container\Container;
 
 if (!function_exists('migrator')) {
     /**
-     * @return \Bytic\Migrations\Migrator
+     * @return \ByTIC\Migrations\Migrator
      */
     function migrator()
     {

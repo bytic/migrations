@@ -10,13 +10,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "Bytic\\Migrations\\": "src"
+      "ByTIC\\Migrations\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bytic\\Migrations\\Tests\\": "tests/src",
-      "Bytic\\Migrations\\Tests\\Fixtures\\": "tests/fixtures"
+      "ByTIC\\Migrations\\Tests\\": "tests/src",
+      "ByTIC\\Migrations\\Tests\\Fixtures\\": "tests/fixtures"
     },
     "files": [
       "src/Utility/general.php"

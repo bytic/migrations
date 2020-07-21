@@ -1,9 +1,9 @@
 <?php
 
-namespace Bytic\Migrations\Tests\Config;
+namespace ByTIC\Migrations\Tests\Config;
 
-use Bytic\Migrations\Tests\AbstractTest;
-use Bytic\Migrations\Config\Config;
+use ByTIC\Migrations\Tests\AbstractTest;
+use ByTIC\Migrations\Config\Config;
 
 /**
  * Class ConfigTest.

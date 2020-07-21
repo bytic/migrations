@@ -1,6 +1,6 @@
 <?php
 
-namespace Bytic\Migrations\Tests;
+namespace ByTIC\Migrations\Tests;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;

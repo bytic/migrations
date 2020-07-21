@@ -1,6 +1,6 @@
 <?php
 
-namespace Bytic\Migrations\Console;
+namespace ByTIC\Migrations\Console;
 
 use ByTIC\Console\Command;
 use Exception;

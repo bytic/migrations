@@ -1,8 +1,8 @@
 <?php
 
-namespace Bytic\Migrations\Tests;
+namespace ByTIC\Migrations\Tests;
 
-use Bytic\Migrations\Utility\Helper;
+use ByTIC\Migrations\Utility\Helper;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 

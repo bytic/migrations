@@ -1,13 +1,13 @@
 <?php
 
-namespace Bytic\Migrations;
+namespace ByTIC\Migrations;
 
-use Bytic\Migrations\Console\MigrateCommand;
+use ByTIC\Migrations\Console\MigrateCommand;
 use Nip\Container\ServiceProviders\Providers\AbstractSignatureServiceProvider;
 
 /**
  * Class MigrationsServiceProvider
- * @package Bytic\Scheduler
+ * @package ByTIC\Scheduler
  */
 class MigrationsServiceProvider extends AbstractSignatureServiceProvider
 {

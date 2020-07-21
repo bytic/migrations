@@ -1,13 +1,13 @@
 <?php
 
-namespace Bytic\Migrations\Migrator\Traits;
+namespace ByTIC\Migrations\Migrator\Traits;
 
 use Phinx\Console\PhinxApplication;
 use Symfony\Component\Console\Input\ArrayInput;
 
 /**
  * Trait RunCommandsTrait
- * @package Bytic\Migrations\Migrator\Traits
+ * @package ByTIC\Migrations\Migrator\Traits
  */
 trait RunCommandsTrait
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bytic\Migrations\Config;
+namespace ByTIC\Migrations\Config;
 
 /**
  * Class Config.
