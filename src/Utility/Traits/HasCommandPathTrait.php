@@ -38,7 +38,7 @@ trait HasCommandPathTrait
     protected static function detectCommandPath()
     {
         $paths = [
-            static::normalizePath(static::getBasePath(),'vendor','bin','phinx'),
+            static::normalizePath(static::getBasePath(), 'vendor', 'bin', 'phinx'),
             '~/.composer/vendor/bin/phinx'
         ];
         foreach ($paths as $path) {

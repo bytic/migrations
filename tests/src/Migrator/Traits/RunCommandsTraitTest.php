@@ -17,7 +17,7 @@ class RunCommandsTraitTest extends AbstractTest
     {
         /** @var Migrator|Mock $migrator */
         $migrator = \Mockery::mock(Migrator::class)->shouldAllowMockingProtectedMethods()->makePartial();
-        $migrator->shouldReceive('runCommand')->with('migrate',[], null)->once()->andReturn(true);
+        $migrator->shouldReceive('runCommand')->with('migrate', [], null)->once()->andReturn(true);
 
         self::assertSame(true, $migrator->migrate());
     }
