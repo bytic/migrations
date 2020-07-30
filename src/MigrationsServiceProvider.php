@@ -2,6 +2,7 @@
 
 namespace ByTIC\Migrations;
 
+use ByTIC\Migrations\Console\CreateCommand;
 use ByTIC\Migrations\Console\MigrateCommand;
 use Nip\Container\ServiceProviders\Providers\AbstractSignatureServiceProvider;
 
@@ -30,7 +31,8 @@ class MigrationsServiceProvider extends AbstractSignatureServiceProvider
     protected function registerCommands()
     {
         $this->commands(
-            MigrateCommand::class
+            MigrateCommand::class,
+            CreateCommand::class
         );
     }
 

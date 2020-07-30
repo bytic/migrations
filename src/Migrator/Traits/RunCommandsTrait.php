@@ -12,12 +12,23 @@ use Symfony\Component\Console\Input\ArrayInput;
 trait RunCommandsTrait
 {
     /**
+     * @param array $arguments
      * @param $output
      * @return int
      */
-    public function migrate($output = null)
+    public function migrate($arguments = [], $output = null)
     {
-        return $this->runCommand('migrate', [], $output);
+        return $this->runCommand('migrate', $arguments, $output);
+    }
+
+    /**
+     * @param array $arguments
+     * @param $output
+     * @return int
+     */
+    public function create($arguments = [], $output = null)
+    {
+        return $this->runCommand('create', $arguments, $output);
     }
 
     /**
@@ -31,6 +42,8 @@ trait RunCommandsTrait
     {
         $phinx = new PhinxApplication();
         $command = $phinx->find($command);
+
+        var_dump($arguments);die();
 
         $arguments['command'] = $command;
         $arguments['--configuration'] = $this->getCachedConfigPath();

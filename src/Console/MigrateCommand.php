@@ -27,6 +27,6 @@ class MigrateCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $migrator = migrator();
-        return $migrator->migrate($output);
+        return $migrator->migrate($input->getArguments(), $output);
     }
 }
