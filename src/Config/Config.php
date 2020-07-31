@@ -21,12 +21,13 @@ class Config
     }
 
     /**
+     * @param array $params
      * @return static
      */
-    public static function fromConfig(array $config)
+    public static function fromConfig(array $params)
     {
         $config = new static();
-        $config->mergeParams($config);
+        $config->mergeParams($params);
 
         return $config;
     }

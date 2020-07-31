@@ -8,7 +8,7 @@ namespace ByTIC\Migrations\Config\Traits;
  */
 trait HasParamsTrait
 {
-    protected $params = null;
+    protected $params = [];
 
     /**
      * @return null

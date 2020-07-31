@@ -10,6 +10,15 @@ use ByTIC\Migrations\Config\Config;
  */
 class ConfigTest extends AbstractTest
 {
+    public function test_fromConfig()
+    {
+        $configParams = @require PROJECT_BASE_PATH . '/config/migrations.php';
+        $config = Config::fromConfig($configParams);
+
+        $params = $config->toArray();
+        self::assertCount(8, $params['environments']['local']);
+    }
+
     public function test_noConfig()
     {
         $config = new Config();
