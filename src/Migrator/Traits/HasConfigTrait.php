@@ -58,9 +58,6 @@ trait HasConfigTrait
     protected function initConfig()
     {
         $this->setConfig($this->generateConfig());
-        $this->initPaths('migrations');
-        $this->initPaths('seeds');
-        $this->addEnviromentFromEnv();
     }
 
     /**
@@ -68,7 +65,17 @@ trait HasConfigTrait
      */
     protected function generateConfig()
     {
+        try {
+            if (config()->has('migrations')) {
+                return Config::fromConfig(config()->get('migrations')->toArray());
+            }
+        } catch (\Exception $e) {
+        }
+
         $config = new Config();
+        $config->initPaths('migrations');
+        $config->initPaths('seeds');
+        $config->addEnviromentFromEnv();
         return $config;
     }
 }

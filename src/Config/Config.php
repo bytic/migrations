@@ -9,39 +9,25 @@ class Config
 {
     use Traits\GenerateContentTrait;
     use Traits\HasEnviromentsTrait;
+    use Traits\HasParamsTrait;
     use Traits\HasPathsTrait;
-
-    protected $params;
 
     /**
      * Config constructor.
      */
     public function __construct()
     {
-        $this->params = [
-            'paths' => [
-                'migrations' => [],
-                'seeds'      => [],
-            ],
-            'environments' => [],
-        ];
+        $this->generateBaseParams();
     }
 
     /**
      * @return static
      */
-    public static function fromConfig()
+    public static function fromConfig(array $config)
     {
         $config = new static();
+        $config->mergeParams($config);
 
         return $config;
-    }
-
-    /**
-     * @return array
-     */
-    public function toArray()
-    {
-        return $this->params;
     }
 }

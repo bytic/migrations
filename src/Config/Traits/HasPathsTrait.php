@@ -2,6 +2,8 @@
 
 namespace ByTIC\Migrations\Config\Traits;
 
+use ByTIC\Migrations\Utility\Helper;
+
 /**
  * Trait HasPathsTrait
  * @package ByTIC\Migrations\Config\Traits
@@ -15,6 +17,21 @@ trait HasPathsTrait
     {
         $this->setPath($path . DIRECTORY_SEPARATOR . 'migrations', 'migrations');
         $this->setPath($path . DIRECTORY_SEPARATOR . 'seeds', 'seeds');
+    }
+
+    /**
+     * @param string $type
+     */
+    public function initPaths($type = 'migrations')
+    {
+        $paths = [];
+        if (in_array($type, ['migrations', 'seeds'])) {
+            $test = Helper::normalizePath(Helper::getBasePath(), 'database', $type);
+            if (is_dir($test)) {
+                $paths[] = $test;
+            }
+        }
+        $this->setPath($paths, $type);
     }
 
     /**

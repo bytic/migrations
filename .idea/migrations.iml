@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/fixtures" isTestSource="true" packagePrefix="ByTIC\Migrations\Tests\Fixtures\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bytic/config" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bytic/console" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bytic/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bytic/deployer-recipies" />

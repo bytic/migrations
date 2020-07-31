@@ -49,13 +49,6 @@ trait HasPathsTrait
      */
     protected function initPaths($type = 'migrations')
     {
-        $paths = [];
-        if (in_array($type, ['migrations', 'seeds'])) {
-            $test = Helper::normalizePath(Helper::getBasePath(), 'database', $type);
-            if (is_dir($test)) {
-                $paths[] = $test;
-            }
-        }
-        $this->setPath($paths, $type);
+        $this->getConfig()->initPaths($type);
     }
 }

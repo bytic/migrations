@@ -85,6 +85,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/bytic/config" />
     </include_path>
   </component>
   <component name="PhpUnit">
