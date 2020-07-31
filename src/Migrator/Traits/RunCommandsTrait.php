@@ -43,8 +43,6 @@ trait RunCommandsTrait
         $phinx = new PhinxApplication();
         $command = $phinx->find($command);
 
-        var_dump($arguments);die();
-
         $arguments['command'] = $command;
         $arguments['--configuration'] = $this->getCachedConfigPath();
 
