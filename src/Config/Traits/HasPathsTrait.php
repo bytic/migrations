@@ -53,7 +53,9 @@ trait HasPathsTrait
      */
     public function path($path, $type = 'migrations')
     {
-        $this->params['paths'][$type] = array_unique(array_merge($this->params['paths'][$type], [$path]));
+        $existing = $this->params['paths'][$type];
+        $existing = is_array($existing) ? $existing : [$existing];
+        $this->params['paths'][$type] = array_unique(array_merge($existing, [$path]));
     }
 
     /**
