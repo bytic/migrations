@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ByTIC\Migrations\Console;
 
 use ByTIC\Console\Command;
@@ -35,7 +37,7 @@ class CreateCommand extends Command
      * @noinspection PhpMissingParentCallCommonInspection
      * @throws Exception
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $migrator = migrator();
         return $migrator->create($input->getArguments(), $output);

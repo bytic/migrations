@@ -1,8 +1,12 @@
 <?php
 
-$baseDir = getcwd();
+declare(strict_types=1);
 
-Dotenv\Dotenv::createImmutable($baseDir)->load();
+use Symfony\Component\Dotenv\Dotenv;
+
+$baseDir = getcwd();
+(new Dotenv())
+    ->bootEnv($baseDir.'/.env');
 
 $config = new \ByTIC\Migrations\Config\Config();
 $config->addBasePath($baseDir);

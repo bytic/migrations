@@ -23,7 +23,7 @@
     }
   },
   "require": {
-    "bytic/dotenv": "^4.0",
+    "bytic/dotenv": "^4.0|^5.0",
     "bytic/container": "^0.9|^1.0|^2.0",
     "bytic/console": "^0.9|^1.0",
     "bytic/config": "^0.9|^1.0",
@@ -32,7 +32,16 @@
   },
   "require-dev": {
     "bytic/deployer-recipies": "^6.0",
-    "phpunit/phpunit": "^7.2|^8.0|^9.0",
-    "mockery/mockery": "^1.0"
+    "bytic/phpqatools": "^1.0"
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "ergebnis/composer-normalize": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "bytic/phpqatools": true
+    }
   }
 }
