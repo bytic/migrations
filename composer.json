@@ -27,7 +27,7 @@
     "bytic/container": "^0.9|^1.0|^2.0",
     "bytic/console": "^0.9|^1.0|^2.0",
     "bytic/config": "^0.9|^1.0|^2.0",
-    "robmorgan/phinx": "~0.13"
+    "robmorgan/phinx": "~0.13|~0.14|~0.15|~0.16"
   },
   "require-dev": {
     "bytic/deployer-recipies": "^6.0|^7.0",
